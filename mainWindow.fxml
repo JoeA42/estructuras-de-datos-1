@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="190.0" prefWidth="278.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MAIN.MainController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER" />
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="190.0" prefWidth="331.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <Line endX="-100.0" endY="138.0" layoutX="296.0" layoutY="51.0" startX="-100.0" startY="-36.0" />
+            <ToggleButton fx:id="mainRunBtn" layoutX="218.0" layoutY="90.0" mnemonicParsing="false" onAction="#runButton" text="Run" />
+            <TextField fx:id="userID" layoutX="23.0" layoutY="65.0" promptText="username" />
+            <Text layoutX="43.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your username" />
+            <RadioButton fx:id="serverToggle" layoutX="46.0" layoutY="115.0" mnemonicParsing="false" onAction="#optionSelect" text="Server" />
+            <RadioButton fx:id="clientToggle" layoutX="46.0" layoutY="141.0" mnemonicParsing="false" onAction="#optionSelect" text="Client" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
